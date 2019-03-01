@@ -124,6 +124,12 @@
       left: parseInt(this.$image.css('border-left-width'), 10)
     };
 
+	// DEBUT - Maintenance par Nadine Giasson St-Amand - 1er mars 2019
+	this.$outerContainer.css('border-radius',40);
+	this.$container.css('border-radius',40);
+	this.$image .css('border-radius',40);
+	// FIN - Maintenance par Nadine Giasson St-Amand - 1er mars 2019
+	
     // Attach event handlers to the newly minted DOM elements
     this.$overlay.hide().on('click', function() {
       self.end();
